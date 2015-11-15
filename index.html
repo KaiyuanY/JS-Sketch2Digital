@@ -3,7 +3,7 @@
 	<title>Converter</title>
 	<meta charset="UTF-8">
 
-<link rel="stylesheet" type="text/css" href="../css/general.css">
+<link rel="stylesheet" type="text/css" href="./css/index.css">
 
 <script>
 /*
@@ -18,38 +18,29 @@
 </head>
 
 <body>
+
 <div id="outercontainer">
-	<div id="header"><br>Life and Dreams</div>
-	<nav>
-		<ul>
-			<li><a href="home.html">Home</a></li>
-			<li><a href="aboutme.html">About Me</a></li>
-			<li><a href="">Journeys</a>
-				<ul>
-					<li><a href="maldives.html">Maldives</a></li>
-					<li><a href="japan.html">Japan</a></li>
-					<li><a href="tailand.html">Tailand</a></li>
-				</ul>
-			</li>
-			<li><a href="">Passions</a>
-				<ul>
-					<li><a href="tech.html">Tech</a></li>
-					<li><a href="basketball.html">Basketball</a></li>
-					<li><a href="games.html">Games</a></li>
-				</ul>
-			</li>
-			<li><a href="gallery.html">Gallery</a></li>
-		</ul>
-	</nav>
-
-
+	<div id="header"><br>Sketch Converter</div>
+	<br style="clear: both;">
 	<div id="main">
-		A dream doesn't become reality through magic; it takes sweat, determination and hard work.
-		<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--Colin Powell
+		<div id="inputImg" class="imgbox"><img id="in" src="" alt="Input Image" /></div>
+
+		<div id="outputImg" class="imgbox"><img id="out" src="" alt="Output Image" /></div>
+
+		<br style="clear: both;">
+		<form id="my_form">
+			<!-- <input type="button" id="get_file" value="Select File"> -->
+			<input type="button" id="convert_file" value="Convert">
+			<input type="file" id="my_file" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);">
+
+		</form>	
+		<br style="clear: both;">
+			<label id="status">Status:</label>
 	</div>
-	<div id="extra"></div>
+	<br style="clear: both;">
 	<!-- that auto appended message is annoying -->
 </div><!--close outercotainer-->
+<script type="text/javascript" src="js/index.js">
+</script>
 </body>
 </html>
