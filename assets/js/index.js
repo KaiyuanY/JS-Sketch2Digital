@@ -2,6 +2,8 @@ document.getElementById('convert_file').onclick = function(){
     if(document.getElementById('my_file').value !== ""){
         document.getElementById('status').innerHTML = "Status: Loading Success!";
         var cx = document.querySelector("canvas").getContext("2d");
+        var str = document.getElementById('col_sel').value;
+        cx.stokeStyle = str.toString();
                                 cx.font = "28px Georgia";
                                 cx.fillStyle = "fuchsia";
                                 cx.fillText("Yo Jason~ hahahaha", 10, 50);
