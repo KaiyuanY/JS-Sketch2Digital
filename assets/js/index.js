@@ -1,5 +1,8 @@
 document.getElementById('convert_file').onclick = function(){
-  document.getElementById('status').innerHTML = "Status: Loading Success!";
+    if(document.getElementById('my_file').value !== "")
+        document.getElementById('status').innerHTML = "Status: Loading Success!";
+    else
+        document.getElementById('status').innerHTML = "Status: Loading Failed!";
 }
 
 var img;
