@@ -1,0 +1,28 @@
+
+/*#outercontainer{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
+#my_form{
+	padding: 20px;
+}
+#convert_file{
+	display: none;
+}
+#my_file {
+    display: none;
+    cursor: pointer;
+}
+
+.imgbox{
+	width: 350px;
+	height: 300px;
+	margin-left: 70px;
+	border: 1px dashed black;
+	padding:auto;
+	/*border-radius: 20px;*/
+	float: left;
+	/*text-align: center;*/
+}
